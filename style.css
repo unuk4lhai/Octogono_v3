@@ -1,0 +1,432 @@
+/* estilo do body */
+
+@font-face{
+    src: url(Fontes/OpenDyslexic3-Regular.ttf);
+    font-family: OpenDyslexic3;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    overflow-x: hidden;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+/* estilo da pagina inicial */
+
+#header_pag_inicial{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw; height: 10vh;
+    background-color: #59BB5D;
+}
+
+#titulo_header{
+    font-size: 30px;
+    color: white;
+    font-family: Inknut Antiqua;
+}
+
+#pag_inicial{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 200vh;
+    background-color: #E9E9E9;
+    overflow-y: scroll;
+}
+
+.div_filtro_pag_inicial{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45vw;
+    height: 10vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+#botao_carrega_alunos_pag_inicial{
+    width: 20vw;
+    height: 7vh;
+    border-radius: 40px;
+    background-color: #59BB5D;
+    color: white;
+    font-family: Kadwa;
+    font-size: 24px;
+    margin-top: 3vh;
+}
+
+#campo_turma{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 55vw;
+    height: 256vh;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    background-color: white;
+}
+
+.titulo_coluna_alunos{
+    font-family: Kadwa;
+    font-size: 20px;
+}
+
+.aluno_pagina_inicial{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 55vw;
+    height: 8vh;
+    font-family: Kadwa;
+    font-size: 20px;
+    border: 1px;
+}
+
+.aluno_pagina_inicial_falta{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 55vw;
+    height: 8vh;
+    background-color: lightcoral;
+    font-family: Kadwa;
+    font-size: 20px;
+    border: 1px;
+}
+
+article{
+    font-family: Kadwa;
+    font-size: 20px;
+}
+
+#botao_aplica_faltas{
+    width: 20vw;
+    height: 7vh;
+    border-radius: 40px;
+    background-color: #59BB5D;
+    color: white;
+    font-family: Kadwa;
+    font-size: 24px;
+    margin-bottom: 5vh;
+}
+
+#footer_pag_inicial{
+    width: 100vw;
+    height: 10vh;
+    background-color: #59BB5D;
+}
+
+/* estilo do nav */
+
+#background_nav{
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #00000080;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #59BB5D;
+    width: 25vw;
+    height: 100vh;
+}
+
+#menu_opcoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 25vw;
+    height: 25vh;
+    background-color: white;
+}
+
+.botaoNav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25vw;
+    height: 10vh;
+    background-color: purple;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.texto_botao_menu{
+    display: flex;
+    justify-content: flex-start;
+    width: 15vw;
+    font-size: 20px;
+    font-family: Kadwa;
+    margin-left: 1vw;
+}
+
+/* estilo da pagina relatorio */
+
+#background_pag_relatorio{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #00000080;
+}
+
+#pag_relatorio{
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#header_pag_relatorio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw; height: 10vh;
+    background-color: #59BB5D;
+}
+
+#titulo_header_relatorio{
+    font-size: 30px;
+    color: white;
+    font-family: Inknut Antiqua;
+}
+
+#corpo_pag_relatorio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 80vh;
+    background-color: #E9E9E9;
+}
+
+#filtros{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-right: 1px solid black;
+    width: 25vw;
+    height: 80vh;
+}
+
+#form_busca_aluno{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#campo_busca_aluno{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid black;
+    width: 20vw;
+    height: 5vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+#aluno_buscado{
+    width: 15vw;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 16px;
+    font-family: Kadwa;
+}
+
+#submit_buscar_aluno{
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-image: url(Imagens/lupa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+
+#separacao_filtro{
+    width: 25vw;
+    height: 10vh;
+    background-color: #59BB5D;
+}
+
+#campo_filtros_gerais{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 25vw;
+    height: 56vh;
+}
+
+.filtro_geral{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 22vw;
+    height: 10vh;
+}
+
+select:required:invalid {
+    color: gray;
+  }
+
+.filtro_checkbox{
+    width: 3vw;
+    height: 3vh;
+}
+
+select{
+    width: 20vw;
+    height: 8vh;
+    padding: 16px 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 18px;
+    font-family: Kadwa;
+  }
+
+#botao_gerar_relatorio{
+    width: 20vw;
+    height: 8vh;
+    border-radius: 40px;
+    background-color: #59BB5D;
+    color: white;
+    font-family: Kadwa;
+    font-size: 28px;
+}
+
+#background_relatorio{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 65vw;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+#relatorio{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 55vw;
+    height:100vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: white;
+}
+
+/* estilo da pagina de ajustes */
+#background_pag_ajustes{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #00000080;
+}
+
+#pag_ajustes{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #E9E9E9;
+    box-shadow: 20px 20px 30px #00000080;
+}
+
+#header_pag_ajustes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50vw;
+    height: 10vh;
+    background-color: #59BB5D;
+}
+
+#corpo_pag_ajustes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 35vh;
+}
+
+.div_ajustes{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40vw;
+    height: 10vh;
+}
+
+#botao_fonte_padrao{
+    width: 3vw;
+    height: 3vw;
+    background: darkred;
+    border: 2px black solid;
+    border-radius: 100px;
+    outline: none;
+    box-shadow: none;
+}
+
+#botao_fonte_dislexia{
+    width: 3vw;
+    height: 3vw;
+    background: none;
+    border: 1px black solid;
+    border-radius: 100px;
+    outline: none;
+    box-shadow: none;
+}
+
+#footer_pag_ajustes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 5vh;
+    background-color: #59BB5D;
+}
